@@ -23,7 +23,6 @@ AI destekli kripto alım-satım paneli. Next.js 15 App Router, Tailwind CSS 4, Z
 - [Stil Sistemi & UI Katmanı](#stil-sistemi--ui-katmanı)
 - [Bildirimler & Kullanıcı Deneyimi](#bildirimler--kullanıcı-deneyimi)
 - [Geliştirme Notları](#geliştirme-notları)
-- [İleri Çalışmalar](#ileri-çalışmalar)
 
 ## Genel Bakış
 
@@ -232,10 +231,3 @@ Varsayılan port `3001`'dir; Next.js uygulaması CORS problemi yaşamadan axios 
 - Dev ve build script'leri Turbopack ile çalışır (`next dev --turbopack`).
 - Henüz test altyapısı eklenmedi; lint script'i kullanılabilir.
 - Lint (`npm run lint`) ve üretim build'i (`npm run build`) uyarısız şekilde tamamlanır.
-
-## İleri Çalışmalar
-
-- Emir geçmişi ve gerçek kullanıcı bakiyesi için kalıcı backend entegrasyonu.
-- WebSocket bağlantısının hata durumunda otomatik yeniden bağlanması için retry stratejileri.
-- Çoklu TradingView layout'ları (derinlik tablosu, emir defteri) ve farklı gösterge kombinasyonları.
-- Mobil deneyimi güçlendirmek için gesture tabanlı etkileşimler.
