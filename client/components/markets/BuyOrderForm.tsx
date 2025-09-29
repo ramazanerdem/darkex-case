@@ -72,8 +72,6 @@ export function BuyOrderForm({ userId }: BuyOrderFormProps) {
         throw new Error(res.error || 'Failed to place buy order')
       }
 
-      console.log('Buy order submitted:', payload)
-
       // Add the new order to the store for immediate UI update
       if (res.order) {
         addOrder(res.order)

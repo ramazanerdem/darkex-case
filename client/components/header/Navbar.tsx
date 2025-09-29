@@ -9,7 +9,6 @@ interface NavbarProps {
 
 const Navbar = ({ hasToken }: NavbarProps) => {
   const pathname = usePathname()
-  console.log('Current Pathname:', pathname)
   return (
     <div className="hidden lg:flex items-center gap-6 text-sm lg:text-base">
       <Link

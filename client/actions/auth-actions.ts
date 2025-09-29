@@ -28,12 +28,6 @@ export async function login(state: FormState, formData: FormData) {
     const user = users[0]
 
     const token = user.id
-    console.log({
-      users: users,
-      username: username,
-      password: password,
-      token: token,
-    })
     cookieStore.set('auth_token', JSON.stringify(token), {
       httpOnly: true,
       sameSite: 'strict',

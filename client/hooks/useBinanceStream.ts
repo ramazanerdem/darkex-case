@@ -77,9 +77,9 @@ const useBinanceStream = () => {
         wsRef.current = ws
 
         ws.onopen = () => {
-          // Symbol değişmişse bu bağlantıyı iptal et
+          // Sembol değişmişse bu bağlantıyı iptal et
           if (currentSymbolRef.current !== symbol) {
-            console.log(`Symbol değişti, bağlantı iptal ediliyor: ${symbol}`)
+            console.log(`Sembol değişti, bağlantı iptal ediliyor: ${symbol}`)
             ws.close()
             return
           }

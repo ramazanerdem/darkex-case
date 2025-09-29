@@ -5,9 +5,7 @@ export async function middleware(request: NextRequest) {
   // const token = cookieStore.get('auth_token')?.value
 
   const hasCookie = request.cookies.has('auth_token')
-  console.log('Has cookie:', hasCookie)
   const { pathname } = request.nextUrl
-  console.log('pathname:', pathname)
 
   if (!hasCookie && pathname === '/dashboard') {
     return NextResponse.redirect(new URL('/', request.url))

@@ -33,7 +33,6 @@ export const useTokenStore = create<TokenState>((set) => ({
   selectedSymbol: 'btcusdt',
   tokenPrice: null,
   setSelectedSymbol: (symbol: string) => {
-    console.log('setSelectedSymbol called with:', symbol)
     set({ selectedSymbol: symbol })
   },
   setTokenPrice: (price: number) => set({ tokenPrice: price }),

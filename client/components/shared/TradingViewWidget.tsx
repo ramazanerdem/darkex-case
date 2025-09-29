@@ -47,7 +47,6 @@ const TradingViewWidget = () => {
         autosize: true,
       })
       element.appendChild(script)
-      console.log('selectedSymbol changed:', selectedSymbol)
       return () => {
         if (element) {
           const scripts = element.querySelectorAll('script')
